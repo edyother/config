@@ -38,13 +38,7 @@ set expandtab
 set nobackup
 
 " Do not let cursor scroll below or above N number of lines when scrolling.
-set scrolloff=5
-
-" Do not wrap lines. Allow long lines to extend as far as the line goes.
-set nowrap
-
-" While searching though a file incrementally highlight matching characters as you type.
-set incsearch
+set scrolloff=999
 
 " Ignore capital letters during search.
 set ignorecase
@@ -86,6 +80,7 @@ Plug 'farmergreg/vim-lastplace'
 Plug 'LunarWatcher/auto-pairs'
 Plug 'lervag/vimtex'
 Plug 'preservim/nerdtree'
+Plug 'tpope/vim-surround'
 call plug#end()
 
 set omnifunc=syntaxcomplete#Complete
